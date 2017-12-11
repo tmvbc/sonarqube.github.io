@@ -27,9 +27,6 @@
 				<section data-transition="convex-in concave-out">
 					<h4>SonarQube</h4>
 				</section>
-				<section data-background-iframe="http://192.168.10.63:9000/dashboard?id=Proto.SmartPhone.GookensakuAndroid" data-background-interactive>
-				<h2>Iframe</h2>
-				</section>
 				<section>embed</section>
 				<section>details</section>
 				<section>SQUALE</section>
@@ -45,9 +42,12 @@
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
 				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/math/math.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
